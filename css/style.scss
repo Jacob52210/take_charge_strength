@@ -24,17 +24,25 @@ body {
 	font-family: 'Acme', sans-serif;
 
 	img {
-		height: 400px;
-		width: auto;
+		height: auto;
+		width: 75vw;
+		max-height: 1000px;
+		max-width: 500px;
 	}
 }
 
 footer {
+	width: 80vw;
+	text-align: center;
 	color: $text-color;
 	position: fixed;
 	bottom: 1rem;
 	left: 50vw;
 	transform: translateX(-50%);
+
+	.fa-facebook-square {
+		padding-right: 1rem;
+	}
 
 	a {
 		color: $secondary-color;

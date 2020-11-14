@@ -17,17 +17,25 @@ body {
 }
 
 .comming_soon img {
-  height: 400px;
-  width: auto;
+  height: auto;
+  width: 75vw;
+  max-height: 1000px;
+  max-width: 500px;
 }
 
 footer {
+  width: 80vw;
+  text-align: center;
   color: white;
   position: fixed;
   bottom: 1rem;
   left: 50vw;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+footer .fa-facebook-square {
+  padding-right: 1rem;
 }
 
 footer a {
