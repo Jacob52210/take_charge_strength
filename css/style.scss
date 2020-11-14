@@ -1,0 +1,42 @@
+//--------------- Imports -------------------//
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Comfortaa:wght@300&family=Fjalla+One&display=swap');
+
+//------------- Configuration ---------------//
+$primary-color: #272727;
+$secondary-color: orangered;
+$text-color: white;
+
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+//---------------- Styles -------------------//
+body {
+	background-color: $primary-color;
+}
+
+.comming_soon {
+	padding-top: 10vh;
+	text-align: center;
+	color: $secondary-color;
+	font-family: 'Acme', sans-serif;
+
+	img {
+		height: 400px;
+		width: auto;
+	}
+}
+
+footer {
+	color: $text-color;
+	position: fixed;
+	bottom: 1rem;
+	left: 50vw;
+	transform: translateX(-50%);
+
+	a {
+		color: $secondary-color;
+	}
+}

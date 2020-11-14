@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Comfortaa:wght@300&family=Fjalla+One&display=swap");
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #272727;
+}
+
+.comming_soon {
+  padding-top: 10vh;
+  text-align: center;
+  color: orangered;
+  font-family: 'Acme', sans-serif;
+}
+
+.comming_soon img {
+  height: 400px;
+  width: auto;
+}
+
+footer {
+  color: white;
+  position: fixed;
+  bottom: 1rem;
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer a {
+  color: orangered;
+}
+/*# sourceMappingURL=style.css.map */
