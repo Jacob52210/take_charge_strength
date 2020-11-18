@@ -3,48 +3,116 @@
 
 //------------- Configuration ---------------//
 $primary-color: #272727;
-$secondary-color: orangered;
+$secondary-color: rgb(255, 0, 0);
 $text-color: white;
 
 * {
 	text-decoration: none;
 	padding: 0;
 	margin: 0;
+	-webkit-tap-highlight-color: transparent;
 }
 
 //---------------- Styles -------------------//
 body {
-	background-color: $primary-color;
-}
-
-.comming_soon {
-	padding-top: 10vh;
-	text-align: center;
-	color: $secondary-color;
-	font-family: 'Acme', sans-serif;
-
-	img {
-		height: auto;
-		width: 75vw;
-		max-height: 1000px;
-		max-width: 500px;
-	}
-}
-
-footer {
-	width: 80vw;
-	text-align: center;
+	height: 100vh;
+	background: linear-gradient(to right, rgba($primary-color, 0), rgba($primary-color, 0.9)),
+		url(../img/sweat.jpg) top center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: $text-color;
-	position: fixed;
-	bottom: 1rem;
-	left: 50vw;
-	transform: translateX(-50%);
-
-	.fa-facebook-square {
-		padding-right: 1rem;
-	}
 
 	a {
-		color: $secondary-color;
+		text-decoration: none;
+		color: $text-color;
+
+		:hover {
+			color: $secondary-color;
+		}
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: rgba(black, 0.7);
+		.logo_container {
+			margin: 1rem;
+
+			img {
+				height: 75px;
+				width: auto;
+			}
+		}
+
+		.nav {
+			color: $text-color;
+			display: flex;
+			justify-content: center;
+
+			ol {
+				width: 60vw;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				list-style: none;
+
+				.active {
+					color: $secondary-color;
+				}
+
+				.two-links {
+					justify-content: space-around;
+				}
+
+				li {
+					padding: 0.5rem;
+					text-align: center;
+					font-family: 'Acme', sans-serif;
+				}
+			}
+		}
+	}
+
+	.page-name {
+		text-align: center;
+		font-size: 3rem;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%);
+	}
+
+	footer {
+		font-size: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100vw;
+		text-align: center;
+		color: $text-color;
+		position: fixed;
+		bottom: 0;
+		left: 50vw;
+		transform: translateX(-50%);
+		background-color: black;
+
+		.icons {
+			width: 50vw;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+
+			.fas,
+			.fab {
+				padding: 1rem;
+				font-size: 2rem;
+			}
+		}
+
+		.footer-text-container {
+			margin-right: 1rem;
+		}
 	}
 }
