@@ -4,12 +4,13 @@
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
 }
 
 body {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0)), to(rgba(39, 39, 39, 0.9))), url(../img/sweat.jpg) top center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0), rgba(39, 39, 39, 0.9)), url(../img/sweat.jpg) top center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url(../img/sweat.jpg) top center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/sweat.jpg) top center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -39,6 +40,15 @@ body .header {
 
 body .header .logo_container {
   margin: 1rem;
+  border-radius: 10%;
+}
+
+body .header .logo_container_active {
+  background-color: red;
+}
+
+body .header .logo_container :hover {
+  background-color: red;
 }
 
 body .header .logo_container img {
@@ -85,6 +95,28 @@ body .header .nav ol li {
   font-family: 'Acme', sans-serif;
 }
 
+body .content-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  text-align: center;
+}
+
+body .content-container h1 {
+  padding-bottom: 1rem;
+  font-family: 'Acme', sans-serif;
+}
+
+body .content-container p {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
+}
+
 body .page-name {
   text-align: center;
   font-size: 3rem;
@@ -118,7 +150,7 @@ body footer {
   left: 50vw;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: black;
+  background-color: #000000;
 }
 
 body footer .icons {
@@ -142,5 +174,9 @@ body footer .icons .fab {
 
 body footer .footer-text-container {
   margin-right: 1rem;
+}
+
+body footer .footer-text-container a {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
