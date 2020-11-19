@@ -95,10 +95,36 @@ body .header .nav ol li {
   font-family: 'Acme', sans-serif;
 }
 
+body section#carousel > figure > img {
+  display: none;
+  margin: 0px auto;
+}
+
+body section#carousel > figure.visible > img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: 200px;
+  padding: 1rem;
+}
+
+body section#carousel > figure > figcaption {
+  display: none;
+}
+
+body section#carousel > figure.visible > figcaption {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
 body .content-container {
   position: fixed;
   left: 50%;
-  top: 53%;
+  top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   width: 80%;
