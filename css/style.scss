@@ -94,35 +94,36 @@ body {
 		padding: 1rem;
 		text-align: center;
 
-		h1 {
-			padding-bottom: 1rem;
-			font-family: 'Acme', sans-serif;
-			font-size: 1rem;
-		}
-
-		p {
-			font-family: 'Comfortaa', cursive;
-			font-weight: bolder;
-		}
-
 		.trainers {
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
 
 			.pic-container {
-				padding-top: 0.5rem;
+				padding: 0.5rem;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+
+				h1 {
+					font-family: 'Acme', sans-serif;
+					font-size: 2rem;
+				}
+
 				img {
-					height: 50px;
+					height: 100px;
 					width: auto;
 					position: center center;
-					border-radius: 20%;
+					border-radius: 10%;
 				}
 			}
 
 			p {
 				text-align: center;
-				font-size: 10px;
+				font-size: 11px;
+				font-family: 'Comfortaa', cursive;
+				font-weight: bolder;
 			}
 		}
 	}

@@ -107,17 +107,6 @@ body .content-container {
   text-align: center;
 }
 
-body .content-container h1 {
-  padding-bottom: 1rem;
-  font-family: 'Acme', sans-serif;
-  font-size: 1rem;
-}
-
-body .content-container p {
-  font-family: 'Comfortaa', cursive;
-  font-weight: bolder;
-}
-
 body .content-container .trainers {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -132,19 +121,39 @@ body .content-container .trainers {
 }
 
 body .content-container .trainers .pic-container {
-  padding-top: 0.5rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content-container .trainers .pic-container h1 {
+  font-family: 'Acme', sans-serif;
+  font-size: 2rem;
 }
 
 body .content-container .trainers .pic-container img {
-  height: 50px;
+  height: 100px;
   width: auto;
   position: center center;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 body .content-container .trainers p {
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
 }
 
 body .page-name {
