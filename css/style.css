@@ -98,11 +98,11 @@ body .header .nav ol li {
 body .content-container {
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 53%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   text-align: center;
 }
@@ -110,11 +110,41 @@ body .content-container {
 body .content-container h1 {
   padding-bottom: 1rem;
   font-family: 'Acme', sans-serif;
+  font-size: 1rem;
 }
 
 body .content-container p {
   font-family: 'Comfortaa', cursive;
   font-weight: bolder;
+}
+
+body .content-container .trainers {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content-container .trainers .pic-container {
+  padding-top: 0.5rem;
+}
+
+body .content-container .trainers .pic-container img {
+  height: 50px;
+  width: auto;
+  position: center center;
+  border-radius: 20%;
+}
+
+body .content-container .trainers p {
+  text-align: center;
+  font-size: 10px;
 }
 
 body .page-name {
@@ -178,5 +208,40 @@ body footer .footer-text-container {
 
 body footer .footer-text-container a {
   color: red;
+}
+
+@media screen and (min-width: 600px) {
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav ol {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav ol .two-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav ol li {
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+  }
 }
 /*# sourceMappingURL=style.css.map */
