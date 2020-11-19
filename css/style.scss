@@ -15,9 +15,10 @@ $text-color: white;
 }
 
 //---------------- Styles -------------------//
+
 body {
 	height: 100vh;
-	background: linear-gradient(to right, rgba($primary-color, 0), rgba($primary-color, 0.9)),
+	background: linear-gradient(to right, rgba($primary-color, 0.7), rgba($primary-color, 0.9)),
 		url(../img/sweat.jpg) top center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -36,7 +37,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		background-color: rgba(black, 0.7);
+		background-color: $primary-color;
 		.logo_container {
 			margin: 1rem;
 			border-radius: 10%;
@@ -108,16 +109,73 @@ body {
 		font-size: 1rem;
 		color: $text-color;
 	}
-	//----------------------------------------------------
+	//----------------------- Form -----------------------------
+
+	.form {
+		text-align: center;
+		padding: 1rem;
+
+		&_chrissy {
+			padding-top: 4rem;
+		}
+
+		label {
+			font-family: 'Acme', sans-serif;
+			font-size: 1rem;
+		}
+		button {
+			margin-top: 1rem;
+			padding: 5px;
+			border: none;
+			border-radius: 5px;
+			background-color: $text-color;
+			font-weight: bolder;
+
+			&:hover {
+				background-color: $secondary-color;
+			}
+		}
+
+		input {
+			width: 50vw;
+			background: transparent;
+			border: none;
+			border-bottom: 2px solid $text-color;
+			padding: 0.5rem;
+			color: $text-color;
+
+			&:focus {
+				outline: none;
+				text-align: center;
+			}
+		}
+
+		textarea {
+			width: 50vw;
+			background: transparent;
+			border: none;
+			border-bottom: 2px solid $text-color;
+			padding: 0.5rem;
+			color: $text-color;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	//---------------------------------------------------------
 	.content-container {
 		position: fixed;
 		left: 50%;
 		top: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		width: 80%;
-		background-color: rgba($primary-color, 0.7);
 		padding: 1rem;
 		text-align: center;
+
+		.chrissy {
+			padding-bottom: 1rem;
+		}
 
 		.trainers {
 			flex-direction: row;
@@ -137,7 +195,7 @@ body {
 				}
 
 				img {
-					height: 100px;
+					height: 70px;
 					width: auto;
 					position: center center;
 					border-radius: 10%;
@@ -165,7 +223,7 @@ body {
 	//-------------------------------------------------------------
 
 	footer {
-		font-size: 10px;
+		font-size: 5px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -188,7 +246,7 @@ body {
 			.fas,
 			.fab {
 				padding: 1rem;
-				font-size: 2rem;
+				font-size: 1rem;
 			}
 		}
 
