@@ -9,8 +9,8 @@
 
 body {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/sweat.jpg) top center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/sweat.jpg) top center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../img/sweat.jpg) top center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../img/sweat.jpg) top center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -105,8 +105,12 @@ body section#carousel > figure.visible > img {
   position: relative;
   overflow: hidden;
   width: auto;
-  height: 200px;
+  height: 190px;
   padding: 1rem;
+}
+
+body section#carousel > figure.visible > img p {
+  font-size: 11px;
 }
 
 body section#carousel > figure > figcaption {

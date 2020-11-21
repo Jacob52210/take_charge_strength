@@ -18,7 +18,7 @@ $text-color: white;
 
 body {
 	height: 100vh;
-	background: linear-gradient(to right, rgba($primary-color, 0.7), rgba($primary-color, 0.9)),
+	background: linear-gradient(to right, rgba($primary-color, 0.5), rgba($primary-color, 0.9)),
 		url(../img/sweat.jpg) top center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -96,8 +96,12 @@ body {
 		position: relative;
 		overflow: hidden;
 		width: auto;
-		height: 200px;
+		height: 190px;
 		padding: 1rem;
+
+		p {
+			font-size: 11px;
+		}
 	}
 	section#carousel > figure > figcaption {
 		display: none;
