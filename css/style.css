@@ -181,6 +181,10 @@ body .content-container {
   text-align: center;
 }
 
+body .content-container a {
+  color: red;
+}
+
 body .content-container_form {
   position: fixed;
   top: 100px;

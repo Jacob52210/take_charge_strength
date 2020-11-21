@@ -167,6 +167,9 @@ body {
 		width: 80%;
 		padding: 1rem;
 		text-align: center;
+		a {
+			color: $secondary-color;
+		}
 
 		&_form {
 			position: fixed;
