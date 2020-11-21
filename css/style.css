@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
-  overflow: hidden;
 }
 
 body {
@@ -126,10 +125,6 @@ body .form {
   padding: 1rem;
 }
 
-body .form_chrissy {
-  padding-top: 4rem;
-}
-
 body .form label {
   font-family: 'Acme', sans-serif;
   font-size: 1rem;
@@ -152,7 +147,7 @@ body .form input {
   width: 50vw;
   background: transparent;
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   padding: 0.5rem;
   color: white;
 }
@@ -166,7 +161,7 @@ body .form textarea {
   width: 50vw;
   background: transparent;
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   padding: 0.5rem;
   color: white;
 }
@@ -184,6 +179,16 @@ body .content-container {
   width: 80%;
   padding: 1rem;
   text-align: center;
+}
+
+body .content-container_form {
+  position: fixed;
+  top: 100px;
+}
+
+body .content-container .landingpage-title {
+  padding: 2rem;
+  font-family: 'Acme', sans-serif;
 }
 
 body .content-container .chrissy {
