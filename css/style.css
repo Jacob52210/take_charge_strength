@@ -106,7 +106,9 @@ body section#carousel > figure.visible > img {
   overflow: hidden;
   width: auto;
   height: 190px;
-  padding: 1rem;
+  margin: 1rem auto;
+  -webkit-box-shadow: 10px 5px 10px red;
+          box-shadow: 10px 5px 10px red;
 }
 
 body section#carousel > figure.visible > img p {
@@ -197,10 +199,6 @@ body .content-container_form {
 body .content-container .landingpage-title {
   padding: 2rem;
   font-family: 'Acme', sans-serif;
-}
-
-body .content-container .chrissy {
-  padding-bottom: 1rem;
 }
 
 body .content-container .trainers {

@@ -97,7 +97,9 @@ body {
 		overflow: hidden;
 		width: auto;
 		height: 190px;
-		padding: 1rem;
+		margin: 1rem auto;
+		//	border-radius: 10%;
+		box-shadow: 10px 5px 10px $secondary-color;
 
 		p {
 			font-size: 11px;
@@ -183,10 +185,6 @@ body {
 		.landingpage-title {
 			padding: 2rem;
 			font-family: 'Acme', sans-serif;
-		}
-
-		.chrissy {
-			padding-bottom: 1rem;
 		}
 
 		.trainers {
