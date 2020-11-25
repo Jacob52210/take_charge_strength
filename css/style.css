@@ -154,7 +154,7 @@ body .form button:hover {
 }
 
 body .form input {
-  width: 50vw;
+  width: 70vw;
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -167,7 +167,7 @@ body .form input:focus {
 }
 
 body .form textarea {
-  width: 50vw;
+  width: 70vw;
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
