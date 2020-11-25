@@ -112,8 +112,8 @@ body {
 	section#carousel > figure.visible > figcaption {
 		display: block;
 		text-align: center;
-		font-weight: bold;
 		font-size: 1rem;
+		font-family: 'Acme', sans-serif;
 		color: $text-color;
 	}
 	//----------------------- Form -----------------------------
@@ -175,6 +175,18 @@ body {
 		padding: 1rem;
 		text-align: center;
 
+		p {
+			text-align: center;
+			font-size: 11px;
+			font-family: 'Comfortaa', cursive;
+			font-weight: bolder;
+		}
+
+		h3 {
+			font-family: 'Acme', sans-serif;
+			font-weight: normal;
+		}
+
 		a {
 			color: $secondary-color;
 		}
@@ -225,13 +237,6 @@ body {
 					border-radius: 10%;
 				}
 			}
-
-			p {
-				text-align: center;
-				font-size: 11px;
-				font-family: 'Comfortaa', cursive;
-				font-weight: bolder;
-			}
 		}
 	}
 
@@ -247,7 +252,7 @@ body {
 	//-------------------------------------------------------------
 
 	footer {
-		font-size: 5px;
+		font-size: 10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -270,7 +275,7 @@ body {
 			.fas,
 			.fab {
 				padding: 1rem;
-				font-size: 1rem;
+				font-size: 1.5rem;
 			}
 		}
 
