@@ -199,6 +199,17 @@ body .content-container_form {
   top: 100px;
 }
 
+body .content-container .idlife-logo {
+  height: 50px;
+  width: auto;
+  margin: 1rem;
+}
+
+body .content-container .idlife-product {
+  height: 200px;
+  width: auto;
+}
+
 body .content-container .landingpage-title {
   padding: 2rem;
   font-family: 'Acme', sans-serif;

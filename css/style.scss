@@ -38,6 +38,7 @@ body {
 		flex-direction: row;
 		justify-content: space-around;
 		background-color: $primary-color;
+
 		.logo_container {
 			margin: 1rem;
 			border-radius: 10%;
@@ -173,6 +174,7 @@ body {
 		width: 80%;
 		padding: 1rem;
 		text-align: center;
+
 		a {
 			color: $secondary-color;
 		}
@@ -180,6 +182,18 @@ body {
 		&_form {
 			position: fixed;
 			top: 100px;
+		}
+
+		.idlife-logo {
+			height: 50px;
+			width: auto;
+			margin: 1rem;
+		}
+
+		.idlife-product {
+			height: 200px;
+			width: auto;
+			//	margin: 1rem;
 		}
 
 		.landingpage-title {
