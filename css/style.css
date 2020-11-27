@@ -36,6 +36,7 @@ body .header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #000000;
+  margin-right: 1rem;
 }
 
 body .header .logo_container {
@@ -70,7 +71,9 @@ body .header .nav {
 }
 
 body .header .nav ol {
-  width: 60vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +96,7 @@ body .header .nav ol .two-links {
 }
 
 body .header .nav ol li {
-  padding: 0.5rem;
+  margin: 0.5rem;
   text-align: center;
   font-family: 'Acme', sans-serif;
 }
@@ -132,7 +135,9 @@ body section#carousel > figure.visible > figcaption {
 
 body .form {
   text-align: center;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 body .form label {
@@ -158,7 +163,7 @@ body .form input {
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-  padding: 0.5rem;
+  padding: 0.3rem;
   color: white;
 }
 
@@ -269,16 +274,6 @@ body .content-container .trainers .pic-container img {
   border-radius: 10%;
 }
 
-body .page-name {
-  text-align: center;
-  font-size: 3rem;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 body footer {
   font-size: 10px;
   display: -webkit-box;
@@ -333,37 +328,97 @@ body footer .footer-text-container a {
 }
 
 @media screen and (min-width: 600px) {
-  .nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .nav ol {
-    text-align: right;
+  body .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .nav ol .two-links {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  body .header .nav ol .two-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .header .nav ol li {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  body .content-container_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+  body .content-container_form .form {
+    margin: 1rem;
+    padding: 2rem;
+    width: 30vw;
+    max-width: 300px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .content-container_form .form label {
+    font-size: 2rem;
+  }
+  body .content-container_form .form input {
+    padding: 1rem;
+  }
+  body .content-container_form .form textarea {
+    padding: 1rem;
+  }
+  body .content-container .idlife-product {
+    height: 250px;
+    width: auto;
+  }
+  body .content-container .landingpage-title {
+    font-size: 3rem;
+  }
+  body .content-container p {
+    font-size: 1rem;
+  }
+  body section#carousel > figure.visible > img {
+    width: auto;
+    height: 200px;
+  }
+  body section#carousel > figure.visible > figcaption {
+    font-size: 2rem;
+  }
+  body footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body footer .icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body footer .footer-text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 75vw;
   }
-  .nav ol li {
-    padding: 0.5rem;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+  body .content-container section#carousel > figure.visible > img {
+    width: auto;
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
