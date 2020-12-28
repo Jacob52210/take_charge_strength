@@ -1,4 +1,4 @@
-# Take Charge Strenght Studio
+# Take Charge Strength Studio
 *By: Jacob Flora*
 ## Description
 *It’s time for you to take risks and take charge! Why settle for mediocrity when you can be marvelous? 
